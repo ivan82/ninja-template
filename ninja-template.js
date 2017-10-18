@@ -117,7 +117,7 @@ NinjaTemplate.prototype = {
 					propertyValue = this.getUndefinedString(tag.tag);
 				}else if(propertyValue === null){
 					propertyValue = this.nullValue;
-				}else if(Ninja.prototype.isArray(propertyValue)){
+				}else if(propertyValue instanceof Array){
 					propertyValue = this.getTagIsArrayString(tag.tag);
 				}
 				result += propertyValue;

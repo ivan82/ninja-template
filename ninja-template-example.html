@@ -1,13 +1,3 @@
-# ninja-template
-
-
-
-# Requieres
-ninja-property
-ninja-logic.js
-
-# Example
-```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,6 +9,7 @@ ninja-logic.js
 <script src="ninja-property.js"></script>
 <script src="ninja-logic.js"></script>
 <script src="ninja-template.js"></script>
+
 
 <script id="counties-list-item-template" type="text/x-template">
 {{#each counties}}
@@ -97,7 +88,6 @@ var countyTemplate = ninjaTemplate.compile(countyTemplateHtml);
 
 
 var countriesObject = [{'name': 'Sweden'}, {'name': 'Norway'}];
-
 var objectsObject = [{
     isUpcomingSale: 1,
     isNewProduction: 1,
@@ -132,4 +122,3 @@ document.getElementById('objects-container').innerHTML = ninjaTemplate.render({'
 </script>
 </body>
 </html>
-```
