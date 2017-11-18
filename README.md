@@ -1,9 +1,9 @@
 # ninja-template
-
+Searches and replaces 
 
 
 # Requieres
-ninja-property
+ninja-property.js
 ninja-logic.js
 
 # Example

@@ -131,10 +131,16 @@ NinjaTemplate.prototype = {
 				}else if(tag.method === 'each'){
 					var array = NinjaProperty.value(data, tag.tag);
 					if(array){
-						for(var j = 0, lenj = array.length; j < lenj; j++){
-							array[j]._index = j;
-							array[j]._parent = data;
-							result += this.render(array[j], tag);
+						var counter = 0;
+						var arrayItem;
+						for(var item in array){
+							arrayItem = array[item];
+							if(arrayItem){
+								arrayItem._index = counter;
+								arrayItem._parent = data;
+								counter++;
+								result += this.render(arrayItem, tag);
+							}
 						}
 					}
 				}
