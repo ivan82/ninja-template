@@ -1,5 +1,11 @@
 # ninja-template
-Searches and replaces 
+Searches and replaces json object properties.
+{{json property}}
+
+Within the each loop there are reserved json properties:
+_key
+_index
+_parent
 
 
 # Requieres

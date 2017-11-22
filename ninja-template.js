@@ -136,6 +136,7 @@ NinjaTemplate.prototype = {
 						for(var item in array){
 							arrayItem = array[item];
 							if(arrayItem){
+								arrayItem._key = item;
 								arrayItem._index = counter;
 								arrayItem._parent = data;
 								counter++;
